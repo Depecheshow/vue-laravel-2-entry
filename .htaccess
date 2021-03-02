@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+
+  RewriteRule ^api/(.*)$ /api/$1 [L]
+  RewriteRule ^(.*)$ /frontend/$1 [L]
+</IfModule>
